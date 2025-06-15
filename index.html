@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OHR Website Launching Soon</title>
+  <style>
+    /* Fonts */
+    @font-face { font-family: 'PolySans Bulky'; src: url('assets/fonts/PolySans Bulky.ttf') format('truetype'); }
+    @font-face { font-family: 'PolySans Bulky'; src: url('assets/fonts/PolySans Bulky Italic.ttf') format('truetype'); font-style: italic; }
+    @font-face { font-family: 'PolySans Neutral'; src: url('assets/fonts/PolySans Neutral.ttf') format('truetype'); }
+    @font-face { font-family: 'PolySans Slim'; src: url('assets/fonts/PolySans Slim.ttf') format('truetype'); }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'PolySans Bulky', Arial, sans-serif;
+      color: #334155;
+      background: #f9fafb;
+    }
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100vh;
+      width: 100vw;
+    }
+    .content-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9fafb url('background.png') center/cover no-repeat;
+    }
+    .content {
+      background: rgba(255,255,255,0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* uniform spacing between all child elements */
+    }
+    .content h1 {
+      width: 100%;
+      margin: 0;
+      font-size: 2rem; /* reduced size to fit on one line */
+      white-space: nowrap; /* prevent wrapping */
+      font-weight: normal;
+      font-family: 'PolySans Bulky', Arial, sans-serif;
+      text-align: center; /* center text */
+    }
+    .content .tagline { font-size: 1.125rem; color: #64748b; font-style: italic; margin: 0; }
+    .content .bio {
+      line-height: 1.5;
+      text-align: left;
+      width: 100%;
+    }
+    
+    }
+    .content .bio p:first-of-type {
+      margin-bottom: 1.5rem; /* larger gap before founded by sentence */
+    }
+    .content .bio p:last-child {
+      color: #64748b; /* same as tagline color */
+    }
+    .content .bio p { margin-bottom: 0.75rem; }
+    .content .footer {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-top: 1rem;
+      text-align: center; /* center bottom sentences */
+    }
+    .content .footer a { color: #8faecb; text-decoration: none; }
+
+    .logo-column {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .logo-column img {
+      width: 120%;
+      max-width: none;
+      opacity: 0.2;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="content-column">
+      <div class="content">
+        <h1>OHR Case Management</h1>
+        <p class="tagline">Compassionate support when life feels overwhelming</p>
+        <div class="bio">
+          <p>We bridge the gap after treatment and through life’s toughest transitions. With daily check-ins, peer coaching, care coordination and on-call help, we make sure you never face the journey alone.</p>
+          <p>Founded by Shana Rubelow and Yocheved Abadi, LCSW—20+ years in mental health, trauma, and addiction care.</p>
+        </div>
+        
+        <p class="footer">Questions? Call Shana at 862-571-3122 or email <a href="mailto:info@ohrcm.com">info@ohrcm.com</a>.<br>Website launching soon. © 2025 OHR Case Management.</p>
+      </div>
+    </div>
+    <div class="logo-column">
+      <img src="logo-transparent.png" alt="OHR Background Logo">
+    </div>
+  </div>
+</body>
+</html>
